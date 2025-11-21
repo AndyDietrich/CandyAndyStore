@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Andy - Match-3 Puzzle Fun</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            color: #1d1d1f;
+            background-image: url('Bkg Green.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        nav .nav-content {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-decoration: none;
+            letter-spacing: -0.01em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #424245;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #1d1d1f;
+        }
+
+        .content-wrapper {
+            max-width: 730px;
+            margin: 80px auto;
+            padding: 0 22px;
+        }
+
+        .content-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 48px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            letter-spacing: -0.005em;
+            color: #1d1d1f;
+            margin-bottom: 16px;
+            line-height: 1.07;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            font-weight: 400;
+            color: #424245;
+            margin-bottom: 32px;
+            line-height: 1.14;
+            text-align: center;
+        }
+
+        .description {
+            font-size: 17px;
+            color: #1d1d1f;
+            line-height: 1.47;
+            margin-bottom: 32px;
+        }
+
+        .features-list {
+            margin-left: 24px;
+        }
+
+        .features-list li {
+            font-size: 17px;
+            color: #1d1d1f;
+            line-height: 1.47;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            margin-top: 100px;
+            padding: 34px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        footer .footer-content {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+            text-align: center;
+            font-size: 12px;
+            color: #6e6e73;
+            line-height: 1.33;
+        }
+
+        footer a {
+            color: #424245;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 21px;
+            }
+
+            .content-box {
+                padding: 32px 24px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .content-box {
+                padding: 24px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">Candy Andy</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="content-box">
+            <h1>Candy Andy</h1>
+            <p class="subtitle">Match-3 Puzzle Fun</p>
+
+            <p class="description">
+                Match, pop and celebrate with <strong>Andy</strong>, your adorable companion in <em>Candy Andy: Match-3 Puzzle Fun</em>!
+                Dive into hundreds of challenging handcrafted match-3 puzzle levels across colorful candylands, easy to learn, satisfying to master.
+            </p>
+
+            <h2 style="font-size: 21px; font-weight: 600; margin-top: 32px; margin-bottom: 16px;">Why players love Candy Andy</h2>
+            <ul class="features-list">
+                <li><strong>A lovable on-screen buddy:</strong> Andy reacts to your play: smiles for big combos, cheers for wins and feels sad if you lose. His personality is the heart of the game.</li>
+                <li><strong>Hundreds of levels & varied objectives:</strong> Clear clouds, collect items, drop the donuts and beat tough challenges. New level types keep the gameplay fresh.</li>
+                <li><strong>Boosters & combos:</strong> Create powerful combos, use boosters to clear tricky puzzles and rack up high scores.</li>
+                <li><strong>Worlds & themes:</strong> Travel through bright, colorful Candylands with immersive landscapes and cozy, feel-good atmosphere.</li>
+                <li><strong>Rewards that keep you coming back:</strong> Daily rewards, star chests, achievements, and the Fortune Wheel give meaningful progression and helpful rewards.</li>
+                <li><strong>Free-to-play with optional in-game purchases & rewarded videos:</strong> Enjoy the full experience for free; IAPs and rewarded ads are available for faster progression.</li>
+            </ul>
+
+            <h2 style="font-size: 21px; font-weight: 600; margin-top: 32px; margin-bottom: 16px;">Game features</h2>
+            <ul class="features-list">
+                <li>Intuitive match-3 mechanics with depth and polish</li>
+                <li>Hundreds of levels across dozens of colorful worlds</li>
+                <li>Multiple level objectives and puzzle mechanics to master</li>
+                <li>Boosters, combo effects and satisfying chain reactions</li>
+                <li>Constant updates and fresh content</li>
+                <li>Cute and adorable animations</li>
+                <li>Optional rewarded videos (watch to get freebies) and safe in-app purchases</li>
+                <li>Lightweight, low-battery-play: quick sessions with big rewards</li>
+            </ul>
+
+            <p class="description" style="margin-top: 32px;">
+                Candy Andy is made with love by Andix Games, an independent game developer, focused on delightful gameplay and a charming companion character. Whether you have five minutes or fifty, Andy is waiting to cheer your wins.
+            </p>
+
+            <p class="description">
+                Download Candy Andy now and start matching with Andy by your side!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright &copy; 2025 Andix Games. All rights reserved.</p>
+            <p>Contact: <a href="mailto:dietrichandreas2@gmail.com">dietrichandreas2@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
